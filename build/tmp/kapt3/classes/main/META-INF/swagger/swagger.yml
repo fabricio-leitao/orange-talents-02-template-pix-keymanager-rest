@@ -1,0 +1,55 @@
+openapi: 3.0.1
+paths:
+  /api/v1/clientes/{clienteId}/pix:
+    post:
+      operationId: cria
+      parameters:
+      - name: clienteId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegistraChaveRequest'
+        required: true
+      responses:
+        "200":
+          description: cria 200 response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Object'
+components:
+  schemas:
+    Object:
+      type: object
+    RegistraChaveRequest:
+      required:
+      - chave
+      - tipoDaChave
+      - tipoDaConta
+      type: object
+      properties:
+        chave:
+          maxLength: 77
+          type: string
+        tipoDaChave:
+          $ref: '#/components/schemas/TipoDaChave'
+        tipoDaConta:
+          $ref: '#/components/schemas/TipoDaConta'
+    TipoDaChave:
+      type: string
+      enum:
+      - CPF
+      - CELULAR
+      - EMAIL
+      - ALEATORIA
+    TipoDaConta:
+      type: string
+      enum:
+      - CONTA_CORRENTE
+      - CONTA_POUPANCA
