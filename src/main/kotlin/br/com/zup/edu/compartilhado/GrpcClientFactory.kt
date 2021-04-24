@@ -1,6 +1,8 @@
 package br.com.zup.edu.compartilhado
 
+import br.com.zup.edu.KeymanagerConsultaGrpcServiceGrpc
 import br.com.zup.edu.KeymanagerGrpcServiceGrpc
+import br.com.zup.edu.KeymanagerListaGrpcServiceGrpc
 import br.com.zup.edu.KeymanagerRemoveGrpcServiceGrpc
 import io.grpc.ManagedChannel
 import io.micronaut.context.annotation.Factory
@@ -16,4 +18,10 @@ class GrpcClientFactory(@GrpcChannel("keyManager") val channel: ManagedChannel) 
 
     @Singleton
     fun removeChave() = KeymanagerRemoveGrpcServiceGrpc.newBlockingStub(channel)
+
+    @Singleton
+    fun detalhaChave() = KeymanagerConsultaGrpcServiceGrpc.newBlockingStub(channel)
+
+    @Singleton
+    fun listaChave() = KeymanagerListaGrpcServiceGrpc.newBlockingStub(channel)
 }

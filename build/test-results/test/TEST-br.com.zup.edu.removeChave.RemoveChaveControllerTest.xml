@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="br.com.zup.edu.removeChave.RemoveChaveControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-24T15:37:49" hostname="ZUP-5568" time="2.229">
-  <properties/>
-  <testcase name="deve remover uma chave pix existente$key_manager_rest()" classname="br.com.zup.edu.removeChave.RemoveChaveControllerTest" time="2.229"/>
-  <system-out><![CDATA[?[36m12:37:46.842?[0;39m ?[1;30m[Test worker]?[0;39m ?[34mINFO ?[0;39m ?[35mi.m.context.env.DefaultEnvironment?[0;39m - Established active environments: [test]
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

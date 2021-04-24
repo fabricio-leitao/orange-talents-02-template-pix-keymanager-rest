@@ -11,6 +11,10 @@ datasources:
     schema-generate: CREATE_DROP
 jpa.default.properties.hibernate.hbm2ddl.auto: update
 
+jackson:
+  serialization:
+    writeDateAsTimestamps: false
+
 grpc:
   client:
     plaintext: true
@@ -18,3 +22,4 @@ grpc:
   channels:
     keyManager:
       address: 'localhost:50051'
+

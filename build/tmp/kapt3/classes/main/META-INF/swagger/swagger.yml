@@ -1,5 +1,22 @@
 openapi: 3.0.1
 paths:
+  /api/v1/clientes/{clienteId}:
+    get:
+      operationId: lista
+      parameters:
+      - name: clienteId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      responses:
+        "200":
+          description: lista 200 response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Object'
   /api/v1/clientes/{clienteId}/pix:
     post:
       operationId: cria
@@ -24,6 +41,28 @@ paths:
               schema:
                 $ref: '#/components/schemas/Object'
   /api/v1/clientes/{clienteId}/pix/{pixId}:
+    get:
+      operationId: consulta
+      parameters:
+      - name: clienteId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: pixId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      responses:
+        "200":
+          description: consulta 200 response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Object'
     delete:
       operationId: deleta
       parameters:
