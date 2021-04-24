@@ -1,1 +1,7 @@
+br.com.zup.edu.registraChave.$RegistraChaveControllerTest$RegistraMockitoStubFactoryDefinitionClass
 br.com.zup.edu.$KeyManagerRestTestDefinitionClass
+br.com.zup.edu.removeChave.$DeletaMockitoStubFactory$StubMock0DefinitionClass
+br.com.zup.edu.removeChave.$RemoveChaveControllerTestDefinitionClass
+br.com.zup.edu.removeChave.$RemoveChaveControllerTest$DeletaMockitoStubFactoryDefinitionClass
+br.com.zup.edu.registraChave.$RegistraMockitoStubFactory$StubMock0DefinitionClass
+br.com.zup.edu.registraChave.$RegistraChaveControllerTestDefinitionClass

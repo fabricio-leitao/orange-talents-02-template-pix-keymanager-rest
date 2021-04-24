@@ -1,5 +1,8 @@
 br.com.zup.edu.registraChave.$RegistraChaveControllerDefinitionClass
 br.com.zup.edu.compartilhado.$GrpcClientFactoryDefinitionClass
+br.com.zup.edu.removeChave.$RemoveChaveControllerDefinitionClass
 br.com.zup.edu.registraChave.$$RegistraChaveControllerDefinition$InterceptedDefinitionClass
+br.com.zup.edu.exceptions.$GlobalExceptionHandlerDefinitionClass
 br.com.zup.edu.registraChave.annotations.$ValidPixKeyValidatorDefinitionClass
 br.com.zup.edu.compartilhado.$GrpcClientFactory$RegistraChave0DefinitionClass
+br.com.zup.edu.compartilhado.$GrpcClientFactory$RemoveChave1DefinitionClass

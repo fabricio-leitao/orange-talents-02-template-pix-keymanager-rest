@@ -23,6 +23,29 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Object'
+  /api/v1/clientes/{clienteId}/pix/{pixId}:
+    delete:
+      operationId: deleta
+      parameters:
+      - name: clienteId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      - name: pixId
+        in: path
+        required: true
+        schema:
+          type: string
+          format: uuid
+      responses:
+        "200":
+          description: deleta 200 response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Object'
 components:
   schemas:
     Object:
